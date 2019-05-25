@@ -1,0 +1,89 @@
+@import url("header.css");
+@import url("sidebar.css");
+
+.contentWrapper {
+  --ofill:#BE5046;
+  --otxt:#56B6C2;
+  --oind:var(--fill);
+  --obkg:#21252B;
+
+
+  --fill:#4B5363;
+  --txt:#56B6C2;
+  --ind:#BE5046;
+  --bkg:#21252B;
+  --sel:#9DA5B4;
+  max-width: 100%;
+  height: 100%;
+  color: var(--txt);
+  background-color: var(--bkg);
+  font-family: Verdana, sans-serif;
+  font-variant: normal;
+  font-weight: 700;
+  margin: auto;
+  z-index: 1;
+}
+
+.spacing {
+  display: inline-block;
+  width: var(--size);
+  height: var(--size);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.paragraph {
+  position:absolute;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: var(--ind) dashed 8px;
+  max-width: 65%;
+}
+.paragraph p {
+  height: 100%;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+a:hover {
+  color: hotpink;
+}
+a:active {
+  color: blue;
+}
+
+table.section {
+  font-size: 18px;
+  color: var(--txt);
+  background-color: var(--fill);
+  border-style: none;
+  border-collapse: collapse;
+  width: 250px;
+  text-align: center;
+  display: inline-table;
+}
+table.section td, table.section th {
+  border-style: none;
+  padding: 4px 7px;
+}
+table.section tr:nth-child(even) {
+  background: var(--txt);
+  color: var(--fill);
+}
+table.section thead th {
+  font-size: 24px;
+  background: var(--bkg);
+  font-weight: bold;
+  color: var(--txt);
+  text-align: left;
+}

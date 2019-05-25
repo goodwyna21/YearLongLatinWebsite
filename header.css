@@ -1,0 +1,43 @@
+.header {
+  z-index: 5;
+  position: fixed;
+  width:calc(100% - 4px);
+  height: 55px;
+  top: 0px;
+  background: var(--fill);
+  border-left: var(--ind) solid 4px;
+  border-bottom: var(--ind) solid 4px;
+  display: inline-block;
+  color: var(--ind);
+}
+
+.header * {
+  line-height: 50px;
+  font-size: 25px;
+  height: 100%;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header p {
+  font-size: 40px;
+  color: var(--txt);
+  padding-right: 15px;
+  padding-bottom: 0px;
+  margin: 0px 0px 0px 0px;
+  float: left;
+}
+
+.header a {
+  padding-top: 0px;
+  display:block;
+  color:inherit;
+  border-left: var(--ind) solid 4px;
+  border-bottom: var(--txt) none 4px;
+  float: right;
+}
+.header a:hover {
+  color: var(--txt);
+  border-left-color: var(--txt);
+  border-bottom-style: solid;
+}

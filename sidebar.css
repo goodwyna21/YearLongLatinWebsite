@@ -1,0 +1,47 @@
+.sidebar {
+  position: absolute;
+  right: 6px;
+  display: block;
+  margin-right: auto;
+  margin-left: 0px;
+  max-width: 30%;
+  background-color: var(--fill);
+  border-left: var(--ind) solid 4px;
+  margin-bottom:20px;
+}
+.sidebar * {
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.sidebar .caption {
+  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-left:5%;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.sideTable {
+  display: inline-table;
+  text-align: center;
+  border-collapse:collapse;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.sideTable td {
+  height:50px;
+  font-size: 25px;
+  font-style: bold;
+  background: var(--fill);
+  border-left: var(--fill) solid 4px;
+  width: 50%;
+}
+.sideTable td a {
+  color: inherit;
+}
+.sideTable td:hover  {
+  color: var(--fill);
+  background: var(--txt);
+  border-left: var(--ind) solid 4px;
+}
