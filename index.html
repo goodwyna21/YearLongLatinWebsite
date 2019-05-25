@@ -5,57 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+    function showSidebar() {
+      document.getElementById("shhh").style.display="inherit";
+      document.getElementById("ooohbutton").innerHTML="5";
+      setTimeout(function(){
+        document.getElementById("sb").style.display="none";
+      },5100);
+      setTimeout(function(){
+        document.getElementById("ooohbutton").innerHTML="0";
+      },5000);
+      setTimeout(function(){
+        document.getElementById("ooohbutton").innerHTML="1";
+      },4000);
+      setTimeout(function(){
+        document.getElementById("ooohbutton").innerHTML="2";
+      },3000);
+      setTimeout(function(){
+        document.getElementById("ooohbutton").innerHTML="3";
+      },2000);
+      setTimeout(function(){
+        document.getElementById("ooohbutton").innerHTML="4";
+      },1000);
+    }
+    </script>
   </head>
   <body class="contentWrapper">
     <div class="header">
       <p>Roman Society</p>
       <a href="bibliography.html">Citations</a>
       <a href="imgBib.html">Images</a>
-      <a href="index.html">Repository</a>
+      <a href="https://github.com/goodwyna21/YearLongLatinWebsite.html">Repository</a>
     </div>
     <div class="spacing" style="--size: 80px;"></div>
+    <br>
 
     <div class="paragraph">
-      <td><table class="section">
+      <table class="section">
         <thead><th>Culture</th></thead>
         <tr><td><a href="pages/ClassSystem.html">Class System</a></td></tr>
         <tr><td><a href="pages/Slavery.html">Slavery</a></td></tr>
-        <tr><td><a href="pages/Women.html">Women</a></td></tr>
-        <tr><td><a href="pages/Architecture.html">Architecture</a></td></tr>
-        <tr><td><a href="pages/Religion.html">Religion</a></td></tr>
         <tr><td><a href="pages/Coliseum.html">Coliseum</a></td></tr>
-      </td></table>
+        <tr class="notdone"><td><a href="pages/nope.html">X Women</a></td></tr>
+        <tr class="notdone"><td><a href="pages/nope.html">X Architecture</a></td></tr>
+        <tr class="notdone"><td><a href="pages/nope.html">X Religion</a></td></tr>
+      </table>
       <div class="spacing" style="--size:20px;"></div>
-      <td><table class="section">
+      <table class="section">
         <thead><th>History</th></thead>
         <tr><td><a href="pages/JuliusCaesar.html">Julius Caesar</a></td></tr>
-        <tr><td><a href="pages/Expansion.html">Expansion</a></td></tr>
-        <tr><td><a href="pages/MilitaryInnovation.html">Military Innovation</a></td></tr>
         <tr><td><a href="pages/FallofRome.html">Fall of Rome</a></td></tr>
-        <tr><td><a href="pages/Philosophy.html">Philosophy</a></td></tr>
-        <tr><td><a href="pages/Infrastructure.html">Infrastructure</a></td></tr>
-      </td></table>
+        <tr class="notdone"><td><a href="pages/nope.html">X Expansion</a></td></tr>
+        <tr class="notdone"><td><a href="pages/nope.html">X Military Innovation</a></td></tr>
+        <tr class="notdone"><td><a href="pages/nope.html">X Philosophy</a></td></tr>
+        <tr class="notdone"><td><a href="pages/nope.html">X Infrastructure</a></td></tr>
+      </table>
       <div class="spacing" style="--size:20px;"></div>
-      <td><table class="section">
+      <table class="section">
         <thead><th>Mythology</th></thead>
         <tr><td><a href="pages/Jupiter.html">Jupiter</a></td></tr>
-        <tr><td><a href="pages/Neptune.html">Neptune</a></td></tr>
-        <tr><td><a href="pages/Pluto.html">Pluto</a></td></tr>
-        <tr><td><a href="pages/RomulusandRemus.html">Romulus and Remus</a></td></tr>
-        <tr><td><a href="pages/Saturn.html">Saturn</a></td></tr>
-        <tr><td><a href="pages/MinorGods.html">Minor Gods</a></td></tr>
-      </td>
+        <tr class="notdone"><td><a href="pages/nope.html">X Neptune</a></td></tr>
+        <tr class="notdone"><td><a href="pages/nope.html">X Pluto</a></td></tr>
+        <tr class="notdone"><td><a href="pages/nope.html">X Romulus and Remus</a></td></tr>
+        <tr class="notdone"><td><a href="pages/nope.html">X Saturn</a></td></tr>
+        <tr class="notdone"><td><a href="pages/nope.html">X Minor Gods</a></td></tr>
+      </table>
     </div>
 
-    <div class="sidebar">
-      <table class="sideTable">
-        <tr>
-          <td class="hoverable"><a style="font-size: 25px;display:block;" href="bibliography.html">Sources</a></td>
-          <td class="hoverable"><a style="font-size: 25px;display:block;" href="imageBib.html">Images</a></td>
-        </tr>
-      </table>
-      <a title="I want to sleep so bad" href="pages/SecretMessage.html"><img title="Oh my god I suck at this" alt="I struggle to remain awake" src="plead.jpg"></a>
-      <p class="caption">Please don&#39;t fail me</p>
+    <div class="sidebarWrapper" style="width:10%;">
+      <div id="sb" class="sidebar">
+        <table class="sideTable">
+          <tr>
+            <td id="ooohbutton" class="hoverable" onclick="showSidebar();"><a style="font-size: 25px;display:block;">Secret Message</a></td>
+          </tr>
+        </table>
+        <a id="shhh" style="display:none;" title="I want to sleep so bad" href="pages/SecretMessage.html"><p>Click</p><img title="Im begging you" alt="I struggle to remain awake" src="plead.jpg"></a>
+      </div>
     </div>
   </body>
 </html>

@@ -13,16 +13,68 @@
   --ind:#BE5046;
   --bkg:#21252B;
   --sel:#9DA5B4;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   color: var(--txt);
   background-color: var(--bkg);
   font-family: Verdana, sans-serif;
   font-variant: normal;
   font-weight: 700;
-  margin: auto;
+  margin: 0px 0px 0px 0px;
   z-index: 1;
+  display: inline-block;
 }
+.paragraph {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: var(--ind) dashed 4px;
+  color: #fbf9f4;
+  max-width: 65%;
+  line-height: 25px;
+}
+.paragraph p {
+  height: 100%;
+}
+
+
+.pageBib {
+  position:static;
+  display: block;
+  border-left: var(--ind) solid 4px;
+  color: var(--txt);
+  background-color: inherit;
+  height: auto;
+  width: 65%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.pageBib:hover {
+  background-color: var(--fill);
+  border-left-color: var(--txt);
+}
+.pageBib a {
+  margin-left: 10px;
+  color: var(--txt);
+  border-left-color: var(--txt);
+}
+.pageBib a:hover {
+  color: var(--ind);
+  border-left-color: var(--ind);
+}
+.pageBib .bibLink{
+  text-decoration: underline;
+  font-size: 30px;
+  color: var(--ind);
+  border-left-color: var(--ind);
+}
+.pageBib .bibLink:hover{
+  color: var(--txt);
+  border-left-color: var(--txt);
+}
+
 
 .spacing {
   display: inline-block;
@@ -33,30 +85,12 @@
   margin-left: 0px;
   margin-right: 0px;
 }
-
-.paragraph {
-  position:absolute;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 0px;
-  padding-left: 10px;
-  margin-left: 10px;
-  border-left: var(--ind) dashed 8px;
-  max-width: 65%;
-}
-.paragraph p {
-  height: 100%;
-}
-
 a:link {
   text-decoration: none;
   color: inherit;
 }
 a:visited {
   color: inherit;
-}
-a:hover {
-  color: hotpink;
 }
 a:active {
   color: blue;
@@ -76,7 +110,7 @@ table.section td, table.section th {
   border-style: none;
   padding: 4px 7px;
 }
-table.section tr:nth-child(even) {
+table.section tr td:hover {
   background: var(--txt);
   color: var(--fill);
 }
@@ -86,4 +120,9 @@ table.section thead th {
   font-weight: bold;
   color: var(--txt);
   text-align: left;
+}
+.notdone {
+  color: var(--txt);
+  background-color: var(--ind);
+  text-decoration: line-through;
 }
