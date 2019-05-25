@@ -32,37 +32,34 @@
   margin-left: 10px;
   border-left: var(--ind) dashed 4px;
   color: #fbf9f4;
-  max-width: 65%;
-  line-height: 25px;
 }
 .paragraph p {
   height: 100%;
 }
 
-
 .pageBib {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  padding-left: 10px;
+  margin-left: 10px;
   position:static;
   display: block;
   border-left: var(--ind) solid 4px;
-  color: var(--txt);
+  color: var(--ind);
   background-color: inherit;
   height: auto;
-  width: 65%;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .pageBib:hover {
-  background-color: var(--fill);
   border-left-color: var(--txt);
 }
-.pageBib a {
-  margin-left: 10px;
-  color: var(--txt);
-  border-left-color: var(--txt);
-}
-.pageBib a:hover {
-  color: var(--ind);
-  border-left-color: var(--ind);
+.pageBib img {
+  margin-top: 10px;
+  max-height: 500px;
 }
 .pageBib .bibLink{
   text-decoration: underline;
